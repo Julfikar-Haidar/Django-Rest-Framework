@@ -26,7 +26,7 @@ class GenericApiView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
 
     def get(self, request, id=None):
         if id:
-            return self.retrieve(request)
+            return self.retrieve(request, id)
         else:
             return self.list(request)
 

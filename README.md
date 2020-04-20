@@ -13,7 +13,7 @@ http://127.0.0.1:8000/article-details/3/
 http://127.0.0.1:8000/api-token-auth/
 
 
-Jwt token auth
+Jwt token Authentication
 
 (method: post ) (params: username,password)
 

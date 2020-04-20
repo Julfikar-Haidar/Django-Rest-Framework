@@ -11,10 +11,20 @@ from .serializers import ArticleSerializers
 from rest_framework.views import APIView
 from rest_framework import generics
 from rest_framework import mixins
+from rest_framework.permissions import IsAuthenticated
+
 
 
 # Create your views here.
 
+# jwt token base authenticate
+
+class HelloView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        content = {'message': 'Hello, World!'}
+        return Response(content)
 
 # Generic Views & Mixins
 class GenericApiView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin, mixins.UpdateModelMixin,

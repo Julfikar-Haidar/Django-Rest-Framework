@@ -17,7 +17,7 @@ from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 
-# jwt token base authenticate
+# jwt token base authenticate Helloview
 
 class HelloView(APIView):
     permission_classes = (IsAuthenticated,)

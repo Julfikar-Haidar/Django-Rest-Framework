@@ -19,7 +19,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    # normat token based auth
+    # normal token based auth
     path('api-token-auth/', token.obtain_auth_token),
 
     # jwt token purpose use url
